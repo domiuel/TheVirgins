@@ -10,12 +10,26 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         PlayerBodyPhysics = GetComponent<Rigidbody2D>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        PlayerBodyPhysics.velocity = new Vector2(Input.GetAxis("Horizontal") * playerSpeed, PlayerBodyPhysics.velocity.y);
+        float horizontalInput = Input.GetAxis("Horizontal");
+        PlayerBodyPhysics.velocity = new Vector2(horizontalInput * playerSpeed, PlayerBodyPhysics.velocity.y);
+
+        // detection for if the player moves right/left (chronological order)
+       if (horizontalInput > 0.01f)
+        {
+            transform.localScale = new Vector2(1, transform.localScale.y);
+        }
+       else if (horizontalInput < -0.01f)
+       {
+            transform.localScale = new Vector2(-1, transform.localScale.y);
+        }
+
+
 
         if (Input.GetKey(KeyCode.Space) == true)
             PlayerBodyPhysics.velocity = new Vector2(PlayerBodyPhysics.velocity.x, playerSpeed);
