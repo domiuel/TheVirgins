@@ -586,7 +586,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 61defbc61b273354e90033aa40be3268, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -610,7 +610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c58876ce6fc8ad4a9cc9a93c4f61ae5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletSpeed: 30
   GunPos: {fileID: 423549096}
   GunBody: {fileID: 8410434365204541000, guid: 63491c3772175f14f8c438f328bee8f8, type: 3}
-  bulletSpeed: 10
   Player: {fileID: 141864067}

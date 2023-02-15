@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class GunScript : MonoBehaviour
 {
+    [SerializeField] private float bulletSpeed = 10;
     public Transform GunPos;
     public GameObject GunBody;
-    public float bulletSpeed = 50;
 
     public GameObject Player;
     // Start is called before the first frame update
