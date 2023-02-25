@@ -762,10 +762,17 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
+<<<<<<< HEAD
   cloudProjectId: fe64197c-ee36-486d-8293-2466d10aa04a
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: 2DGAME (2)
+=======
+  cloudProjectId: febc0c0a-8384-432f-baf9-2dc70f2cdfac
+  framebufferDepthMemorylessMode: 0
+  qualitySettingsNames: []
+  projectName: gayming (2)
+>>>>>>> 6a1c20be50035a3572778ccb4be2e15b24427187
   organizationId: domuelt
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
